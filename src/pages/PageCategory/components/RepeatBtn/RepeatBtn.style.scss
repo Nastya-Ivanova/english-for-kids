@@ -1,0 +1,22 @@
+.repeat-btn {
+  align-self: center;
+
+  width: 70px;
+  height: 70px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-image: url('asset/img/repeat.svg'),
+  linear-gradient(#0099ae, #00bf82 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px, cover;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+  }
+}

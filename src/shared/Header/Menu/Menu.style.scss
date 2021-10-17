@@ -1,0 +1,46 @@
+@keyframes showMenu {
+  from{
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.menu-wrapper__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index: 1;
+
+  width: 300px;
+  height: 100vh;
+
+  padding-top: 80px;
+  padding-left: 50px;
+
+  background: linear-gradient(40deg,#00bf82,#0099ae);
+
+  animation: showMenu 1s;
+}
+
+.menu-wrapper__NavLink {
+  font-family: 'Roboto';
+  font-size: 22px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+
+  &:hover,
+  &:focus{
+    text-decoration: underline;
+  }
+}
+
+.active{
+  color: rgb(175, 25, 108);
+}

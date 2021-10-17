@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), url("./fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("./fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+.page-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.page-category__header{
+  align-self: center;
+
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #212529;
+}

@@ -1,0 +1,29 @@
+.footer{
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 20px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  color: black;
+}
+
+.footer__github{
+  margin-right: 30px;
+  color: black;
+}
+
+.footer__rs-school{
+  width: 51px;
+
+  margin-left: 50px;
+
+  font-size: 0;
+
+  background-image: url('asset/img/rs_school.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}

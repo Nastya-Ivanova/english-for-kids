@@ -1,0 +1,1 @@
+export { GamePartOfWordList } from './GamePartOfWordList';

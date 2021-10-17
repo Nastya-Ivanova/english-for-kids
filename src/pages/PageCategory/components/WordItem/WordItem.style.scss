@@ -1,0 +1,82 @@
+.words-list__item {
+  position: relative;
+
+  width: 300px;
+  height: 280px;
+
+  margin: 20px;
+}
+
+.words-list__item-wrap {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  perspective: 1000px;
+  transition: 1s;
+  backface-visibility: hidden;
+
+  &--front {
+  cursor: pointer;
+  }
+
+  &--back {
+    transform: rotateY(180deg);
+  }
+}
+
+.words-list__item-wrap--front.rotate {
+  transform: rotateY(180deg);
+}
+.words-list__item-wrap--back.rotate {
+  transform: rotateY(360deg);
+}
+
+.words-list__img {
+  width: 100%;
+}
+
+.words-list__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  color: #212529;
+}
+
+.words-list__btn-rotate {
+  position: absolute;
+  right: 20px;
+
+  width: 30px;
+  height: 30px;
+
+  margin-left: 60px;
+
+  border: none;
+
+  background-color: transparent;
+  background-image: url('asset/img/arrow-rotate.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    transform: scale(1.1);
+  }
+}

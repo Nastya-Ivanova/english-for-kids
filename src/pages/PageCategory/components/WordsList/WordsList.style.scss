@@ -1,0 +1,10 @@
+.words-list-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.words-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
